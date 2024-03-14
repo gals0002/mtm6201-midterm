@@ -19,8 +19,11 @@ nav {
     width: 100%;
     box-shadow: 6px 6px 30px #435d6b25, -6px -6px 30px #435D6B25;
     overflow: hidden;
+    /* height: 70px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.location>span {color: #910203;}
 h1 {
     font-weight: 600;
     font-size: 30px;
@@ -50,6 +53,9 @@ p {
     border-radius: 5px;
     display: flex;
     height: 40px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
 }
 input {
     display: block;
@@ -60,29 +66,31 @@ nav>ul>li>a>div>p {font-size: 14px;}
 button {
     width: 50px;
     height: 50px;
-    border: solid 5px black;
+    /* border: solid 5px black; */
     border-radius: 5px;
 }
 .sections {
     display: flex;
     flex-direction: row;
-    margin: 5%;
-    justify-content: center;
+    /* margin: 5%; */
+    justify-content: space-between;
 }
 .sections>div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     height: 176px;
     width: 95px;
     box-shadow: 6px 6px 30px #435d6b25, -6px -6px 30px #435D6B25;
     margin: auto;
     border-radius: 20px;
+    align-content: center;
+    align-items: center;
 }
 .sections>div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     height: 176px;
     width: 95px;
     box-shadow: 0px 0px 0px #435d6b25, 0px 0px 0px #435D6B25;
@@ -97,7 +105,9 @@ button {
 h3 {margin-top: 20px; font-weight: 600; font-size: 18px; margin-bottom: 20px;}
 
 .popular {display: grid;
-grid-template-columns: 50% 50%;}
+grid-template-columns: 50% 50%;
+justify-content: center;
+align-items: center;}
 .popular>a {color: #C8161D; text-align: end; font-size: 12px;}
 
 .material-symbols-outlined {
@@ -107,7 +117,8 @@ grid-template-columns: 50% 50%;}
   'GRAD' 0,
   'opsz' 24
 }
-.popcard {grid-column-start: 1;
+.popcard {
+    grid-column-start: 1;
     grid-column-end: 3;
     box-shadow: 6px 6px 30px #435d6b25, -6px -6px 30px #435D6B25;
     border-radius: 15px;
@@ -135,3 +146,5 @@ grid-template-columns: 50% 50%;}
     margin: 15px;
 }
 .popcard>a>picture {grid-area: a; margin: auto;}
+.thevoid {height: 70px;}
+span.il {color: #667C8A;}
