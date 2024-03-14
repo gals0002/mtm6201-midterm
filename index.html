@@ -14,13 +14,13 @@
 <body>
     <div class="hidden">
         <ul>
-            <li><a href="">jump to nav</a></li>
-            <li><a href="">jump to sections</a></li>
-            <li><a href="">jump to popular</a></li>
+            <li><a href="#nav">jump to nav</a></li>
+            <li><a href="#sec">jump to sections</a></li>
+            <li><a href="#pop">jump to popular</a></li>
         </ul>
     </div>
     <!-- bottom sticky menu -->
-    <nav>
+    <nav id="nav">
         <ul>
             <li>
                 <a href="">
@@ -61,19 +61,19 @@
     <div class="wrapper">
     <header>
         
-        <div><button><img src="images/gg_menu-right.svg" alt=""></button>
-            <div class="location"><img src="images/gridicons_location.svg" alt="">Chicago, <span class="il">IL</span></div>
+        <div><button><img src="images/gg_menu-right.svg" alt="menu"></button>
+            <div class="location"><img src="images/gridicons_location.svg" alt="location pin">Chicago, <span class="il">IL</span></div>
         <button><img src="images/Rectangle 1.png" alt=""></button></div>
     </header>
     <h1>Hey!</h1>
     <p>Let's get your order</p>
     <div class="srch"><span class="material-symbols-outlined">
         search
-        </span><input type="text" placeholder="Search our delicious burgers"></div>
+        </span><input aria-role="searchbox" type="text" placeholder="Search our delicious burgers"></div>
     <!-- sections -->
-        <div class="sections">
+        <div class="sections" id="sec">
         <div>
-            <img src="images/Rectangle 7.png" alt="">
+            <img src="images/Rectangle 7.png" alt="picture of a burger">
             <h4>Burgers</h4>
             <img src="images/arrowr_copy.svg" alt="">
         </div>
@@ -89,14 +89,14 @@
         </div>
     </div>
     <!-- popular -->
-    <div class="popular">
+    <div class="popular" id="pop">
         <h3>Popular</h3>
         <a href="#">View all ></a>
         <div class="popcard">
             <a href="order.html">
                 <div class="red"></div>
                 <picture>
-                    <source media="" srcset="">
+                    <source media="(min-width: 1200px)" srcset="images/Rectangle11-350_x_350.png">
                     <source media="" srcset="">
                     <img src="images/Rectangle 11.png" alt="">
                 </picture>

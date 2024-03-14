@@ -11,6 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="hidden">
+        <ul>
+            <li><a href="#ord">jump to ordered items</a></li>
+            <li><a href="#bill">jump to bill</a></li>
+            <li><a href="#pay">jump to payment</a></li>
+        </ul>
+    </div>  
     <header class="aeaeae">
         <a href="order.html"><button class="yeah"><img src="images/order/ant-design_left-outlined.svg" alt=""></button></a>
         <h3>Cart</h3>
@@ -18,7 +25,7 @@
 
         <button class="yeah"><img src="images/threedo.svg" alt=""></header>
         <div>
-            <div class="cartcard">
+            <div class="cartcard" id="ord">
                 <img src="images/Rectangle 11.png" alt="">
                 <p>Chippotle Che...</p>
                 <span><img src="images/bi_x.svg" alt=""></span>
@@ -42,7 +49,7 @@
             </div>
         </div>
         <a href=""><div class="blackbutton">Apply Coupons <img src="images/bi_arrow-right.svg" alt=""></div></a>
-        <div class="bill">
+        <div class="bill" id="bill">
         <p>Item Total</p>
         <p class="standingonbusiness">$62.85</p>
         <p>Delivery Charge</p>
@@ -51,7 +58,7 @@
         <p class="standingonbusiness">$0.25</p>
         <h4>Total:</h4>
         <h4 class="standingonbusiness">$65.35</h4></div>
-        <a href=""><div class="redbutton">
+        <a href="" id="pay"><div class="redbutton">
             Proceed to payment method
         </div></a>
 </body>

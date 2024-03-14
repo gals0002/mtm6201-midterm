@@ -11,19 +11,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header class="orheader">
-        <a href="index.html"><button class="yeah"><img src="images/order/ant-design_left-outlined.svg" alt=""></button></a>
-        <button class="yeah"><img src="images/order/bx_bx-heart.svg" alt="">
+    <div class="hidden">
+        <ul>
+            <li><a href="#bur">jump to burger description</a></li>
+            <li><a href="#seize">jump to size selections</a></li>
+            <li><a href="#cart">jump to cart</a></li>
+        </ul>
+    </div>    
+    <header class="orheader">
+        <a href="index.html"><button class="yeah"><img src="images/order/ant-design_left-outlined.svg" alt="go back"></button></a>
+        <button class="yeah"><img src="images/order/bx_bx-heart.svg" alt="favorite">
         </header>
     <div class="outburjer">
         <div class="burjer">
             
         </div>
-        <div class="sq"><h3>Chipotle Cheesy Chicken</h3>
+        <div class="sq" id="bur"><h3>Chipotle Cheesy Chicken</h3>
             <p>A signature flame-grilled chicken patty topped with smoked beef</p>
-            <img src="images/order/burge.png" alt=""></div>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/order/burge-250_x_250.png" alt="burger">
+                <img src="images/order/burge.png" alt="burger"></picture></div>
     </div>
-        <div class="sml">
+        <div class="sml" id="seize">
             <div class="size"><p>S</p></div>
             <div class="size"><p class="m">M</p></div>
             <div class="size"><p>L</p></div>
@@ -37,7 +46,7 @@
             <p>Price</p>
             <p class="price">$ 41.90</p>
         </div>
-        <a href="cart.html"><button class="cart"><img src="images/order/cart.svg" alt="">Go to Cart</button></a></div>
+        <a href="cart.html" id="cart"><button class="cart"><img src="images/order/cart.svg" alt="">Go to Cart</button></a></div>
         <div class="thevoid"></div>
         <div class="thevoid"></div>
 </body>
