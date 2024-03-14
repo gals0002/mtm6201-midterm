@@ -90,6 +90,9 @@ button {
     align-content: center;
     align-items: center;
 }
+.sections>div:hover {
+    animation: 1s bounc ease-in-out;
+}
 .sections>div:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -184,7 +187,7 @@ span.il {color: #667C8A;}
 
 }
 .burjer {
-    border-radius: 400px;
+    border-radius: 100%;
     box-shadow: 6px 6px 30px #00000010;
     height: 400px;
     width: 100%;
@@ -200,6 +203,7 @@ span.il {color: #667C8A;}
     background-color: #ffffff;
     /* height: 200px; */
     /* padding-bottom: 150px; */
+    width: 100%;
 }
 .sml {
     display: flex;
@@ -226,7 +230,9 @@ span.il {color: #667C8A;}
     background: #C8161D;
     /* order: 2; */
 }
-
+.sml :nth-child(1) {animation: appear 0.5s ease-in-out;}
+.sml :nth-child(2) {animation: appear 0.7s ease-in-out;}
+.sml :nth-child(3) {animation: appear 0.9s ease-in-out;}
 
 .size>p {
     color: black;
@@ -277,3 +283,98 @@ span.il {color: #667C8A;}
     margin-left: 20px;
     margin-top: 5px;
 }
+
+@keyframes bounc {0%{} 10% {transform: translateY(-20px);} 50% {transform: translateY(10px);} 90% {transform: translateY(0px);}}
+
+
+/* CART BELOW */
+.aeaeae {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+}
+.aeaeae>.yeah>img {
+    transform: rotateZ(90deg)
+}
+.cartcard {
+    box-shadow: 4px 4px 20px #00000010, -4px -4px 20px #00000010;
+    /* height: 120px; */
+    display: grid;
+    grid-template-areas: "a b c"
+    "a d e";
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 5px;
+    border-radius: 10px;
+}
+.cartcard>img {
+    grid-area: a;
+    width: 100px;
+    align-self: center;
+    margin: 10px;
+}
+.cartcard>p {
+    color: black;
+    font-weight: 500;
+
+    grid-area: b;
+}
+.cartcard>.amt {
+
+    grid-area: d;
+    border: 1px solid #F2F5F8;
+    width: 80px;
+}
+.cartcard>.moner {
+    grid-area: e;
+}
+.cartcard>.amt>span {
+    color: #C8161D;
+}
+.cartcard>.amt>p {
+    color: black;
+}
+.blackbutton {
+    display: flex;
+    width: 86%;
+
+    margin: 10px;
+    background: black;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center; 
+}
+.bill {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-top: #F2F5F8 solid 1px;
+    margin: 15px;
+    padding-top: 20px;
+}
+.bill>.standingonbusiness {
+    color: black;
+    font-weight: 500;
+    text-align: right;
+}
+.bill>h4 {
+    font-weight: 600;
+    margin: 30px 0px;
+}
+.bill>p {
+    margin: 10px 0px;
+}
+.redbutton {
+    background: #C8161D;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@keyframes appear {0%{transform:scale(0.1);} 70%{transform:scale(1.1);} 100%{transform:scale(1);}}
